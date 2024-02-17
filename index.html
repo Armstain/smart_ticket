@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,12 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#1DD1001A",
+              primary: "#1DD100",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-raleway > {
         font-family: "Raleway", sans-serif;
       }
     </style>
   </head>
+
   <body class="font-raleway">
     <header class="container mx-auto lg:px-24 px-8">
       <nav>
@@ -61,29 +75,87 @@
                 <li><a>Item 3</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-2xl font-bold">S Ticket</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a>Item 3</a></li>
-              `
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn">Button</a>
+            <a
+              class="btn bg-[#1DD1001A] border-solid border-lime-300 border-1 outline-none text-primary"
+              >Button
+              <img src="images/bus-icon.png" alt="" />
+            </a>
           </div>
         </div>
       </nav>
+      <!-- Banner Section -->
+      <div class="container">
+        <div class="relative">
+          <div class="relative flex justify-center items-center">
+            <div
+              class="bg-[url('./images/banner.png')] h-[550px] w-full bg-center rounded-box bg-no-repeat"
+            ></div>
+            <div class="absolute text-center">
+              <h1 class="font-bold text-5xl text-white">
+                End-to-End Travel With <br />
+                <span class="text-primary">S Paribahan</span>
+              </h1>
+              <h1 class="text-white my-5">
+                Yes, you can run unit tests and view the results directly within
+                the app. The <br />integrated testing features allow for a
+                streamlined
+              </h1>
+              <button
+                class="btn btn-active bg-primary border-none text-black px-8"
+              >
+                Buy Ticket
+              </button>
+            </div>
+          </div>
+          <!-- Banner Card -->
+          <div class="banner-card flex justify-around mt-[-40px]">
+            <div
+              class="flex gap-2 border-b-2 border-primary z-20 rounded-box p-5 bg-white"
+            >
+              <div>
+                <img src="./images/stoppage.png" alt="" />
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">500K+</h1>
+                <h1>Registered Users</h1>
+              </div>
+            </div>
+            <div
+              class="flex gap-2 border-b-2 border-primary z-20 rounded-box p-5 bg-white"
+            >
+              <div>
+                <img src="./images/people.png" alt="" />
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">1.7 lacks</h1>
+                <h1>Ticket Sold</h1>
+              </div>
+            </div>
+            <div
+              class="flex gap-2 border-b-2 border-primary z-20 rounded-box p-5 bg-white"
+            >
+              <div>
+                <img src="./images/ticket-cupon.png" alt="" />
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">80K+</h1>
+                <h1>Rental Partners</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
