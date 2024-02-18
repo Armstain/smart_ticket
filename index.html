@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Custom color -->
     <script>
       tailwind.config = {
@@ -111,11 +119,13 @@
                 the app. The <br />integrated testing features allow for a
                 streamlined
               </h1>
-              <button
-                class="btn btn-active bg-primary border-none text-black px-8"
-              >
-                Buy Ticket
-              </button>
+              <a href="#ticket-section">
+                <button
+                  class="btn btn-active bg-primary border-none text-black px-8 font-bold"
+                >
+                  Buy Ticket
+                </button>
+              </a>
             </div>
           </div>
           <!-- Banner Card -->
@@ -207,6 +217,7 @@
       </section>
       <!-- Ticket section -->
       <section
+        id="ticket-section"
         class="offer-section container mx-auto bg-[#F7F8F8] rounded-t-3xl"
       >
         <div class="text-center pt-28">
@@ -283,6 +294,242 @@
                 550 taka <br />
                 <span class="text-xl">per sit</span>
               </h1>
+            </div>
+          </div>
+        </div>
+
+        <!--  Seat Section -->
+
+        <div
+          class="seat-section grid grid-cols-2 bg-[#ffff] mx-32 mt-5 rounded-box"
+        >
+          <!-- col 1 -->
+          <div class="border-r-4 border-dashed px-7">
+            <div>
+              <h1>Select Your Seat</h1>
+            </div>
+            <hr class="border-dashed border-2 my-4" />
+            <div class="flex justify-between">
+              <div class="flex gap-1">
+                <div>
+                  <img src="./images/seat-gray.png" alt="" />
+                </div>
+                <div>
+                  <h1>Available</h1>
+                </div>
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <img src="./images/seat-green-filled.png" alt="" />
+                </div>
+                <div>
+                  <h1>Selected</h1>
+                </div>
+              </div>
+            </div>
+            <hr class="border-dashed border-2 my-4" />
+            <div class="flex justify-end my-4">
+              <button class="bg-[#0307121A] p-3 px-8 rounded-lg">
+                <svg
+                  width="26.000000"
+                  height="26.000000"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs />
+                  <path
+                    id="Vector"
+                    d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
+                    stroke="#030712"
+                    stroke-opacity="0.700000"
+                    stroke-width="2.000000"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="seat-number grid grid-rows-6 grid-cols-4 text-center gap-3"
+            >
+              <div class="flex justify-end items-center">A</div>
+              <div>
+                <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">A1</button>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">A2</button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">A3</button>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">B</div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">B1</button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">B2</button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">B3</button>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">C</div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">C1</button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">C2</button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">C3</button>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">D</div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">D1</button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg active:bg-primary"
+                  >
+                    D2
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">D3</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- col 2 -->
+          <div class="px-7">
+            <div>
+              <h1>SelectYour Seat</h1>
+            </div>
+            <hr class="border-dashed border-2 my-4" />
+
+            <div class="overflow-x-auto bg-[#F7F8F8] p-7">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Seat</th>
+                    <th>Class</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr>
+                    <td>C2</td>
+                    <td>Economy</td>
+                    <td>550</td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr>
+                    <td>C2</td>
+                    <td>Economy</td>
+                    <td>550</td>
+                  </tr>
+                  <!-- row 3 -->
+
+                  <tr class="border-t-2 border-solid border-black font-bold">
+                    <td>Total Price</td>
+                    <td></td>
+                    <td>BDT 1000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="relative m-3">
+                <button
+                  class="btn btn-active bg-primary border-none text-white font-bold px-8 absolute left-[58%]"
+                >
+                  Apply
+                </button>
+                <input
+                  type="text"
+                  placeholder="Have Any Coupon"
+                  class="input w-full max-w-xs"
+                />
+              </div>
+              <div class="">
+                <table class="table">
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr class="font-bold">
+                      <td>Grand Total</td>
+                      <td>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      </td>
+                      <td>BDT 1000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- passenger form -->
+            <div class="form">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold">Passenger Name*</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  class="input input-bordered w-full"
+                />
+                <div class="label">
+                  <span class="label-text font-bold">Phone Number*</span>
+                </div>
+                <input
+                  type="number"
+                  placeholder="Enter Your Phone Number"
+                  class="input input-bordered w-full"
+                />
+                <div class="label">
+                  <span class="label-text font-bold">Email ID</span>
+                </div>
+                <input
+                  type="email"
+                  placeholder="Enter Your Email ID"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <button
+                class="btn btn-active bg-primary border-none text-white font-bold px-8 w-full my-5"
+              >
+                NEXT
+              </button>
+              <div class="flex justify-around">
+                <div class="underline">
+                  <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="underline">
+                  <a href="#">Cancellation Policy</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
