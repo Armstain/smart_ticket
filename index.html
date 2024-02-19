@@ -43,6 +43,10 @@
       .font-raleway > {
         font-family: "Raleway", sans-serif;
       }
+      li {
+        display: flex;
+        justify-content: space-between;
+      }
     </style>
   </head>
 
@@ -96,7 +100,7 @@
           <div class="navbar-end">
             <a
               class="btn bg-[#1DD1001A] border-solid border-lime-300 border-1 outline-none text-primary"
-              >Button
+              >BUS
               <img src="images/bus-icon.png" alt="" />
             </a>
           </div>
@@ -241,10 +245,13 @@
                   </div>
                 </div>
                 <div>
-                  <a
+                  <div
                     class="btn bg-[#1DD1001A] border-solid border-lime-300 border-1 outline-none text-primary"
-                    ><img src="images/seat-green.png" alt="" />40 Seats Left
-                  </a>
+                  >
+                    <img src="images/seat-green.png" alt="" />
+
+                    <h1 id="sit-left">40</h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -356,60 +363,113 @@
             >
               <div class="flex justify-end items-center">A</div>
               <div>
-                <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">A1</button>
-              </div>
-              <div>
                 <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">A2</button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">A3</button>
-                </div>
-              </div>
-              <div class="flex justify-end items-center">B</div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">B1</button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">B2</button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">B3</button>
-                </div>
-              </div>
-              <div class="flex justify-end items-center">C</div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">C1</button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">C2</button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">C3</button>
-                </div>
-              </div>
-              <div class="flex justify-end items-center">D</div>
-              <div>
-                <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">D1</button>
+                  <button
+                    id="A1"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    A1
+                  </button>
                 </div>
               </div>
               <div>
                 <div>
                   <button
-                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg active:bg-primary"
+                    id="A2"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    A2
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    id="A3"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    A3
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">B</div>
+              <div>
+                <div>
+                  <button
+                    id="B1"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    B1
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    id="B2"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    B2
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    id="B3"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    B3
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">C</div>
+              <div>
+                <div>
+                  <button
+                    id="C1"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    C1
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    id="C2"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    C2
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    id="C3"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    C3
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-end items-center">D</div>
+              <div>
+                <div>
+                  <button
+                    id="D1"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    D1
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button
+                    id="D2"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
                   >
                     D2
                   </button>
@@ -417,7 +477,12 @@
               </div>
               <div>
                 <div>
-                  <button class="bg-[#F7F8F8] p-3 px-8 rounded-lg">D3</button>
+                  <button
+                    id="D3"
+                    class="bg-[#F7F8F8] p-3 px-8 rounded-lg sit-btn"
+                  >
+                    D3
+                  </button>
                 </div>
               </div>
             </div>
@@ -435,44 +500,53 @@
                 <!-- head -->
                 <thead>
                   <tr>
-                    <th>Seat</th>
-                    <th>Class</th>
+                    <div class="relative">
+                      <th>Seat</th>
+                      <div
+                        class="absolute right-[41%] mt-2 bg-primary rounded-full text-white"
+                      >
+                        <h1 id="sit-count">0</h1>
+                      </div>
+                    </div>
+
                     <th>Price</th>
+
+                    <th>Class</th>
                   </tr>
                 </thead>
                 <tbody>
                   <!-- row 1 -->
-                  <tr>
-                    <td>C2</td>
-                    <td>Economy</td>
-                    <td>550</td>
-                  </tr>
+                  <tr id="selected-place-container" class="list-none"></tr>
                   <!-- row 2 -->
-                  <tr>
+                  <!-- <tr>
                     <td>C2</td>
                     <td>Economy</td>
                     <td>550</td>
-                  </tr>
+                  </tr> -->
                   <!-- row 3 -->
 
                   <tr class="border-t-2 border-solid border-black font-bold">
                     <td>Total Price</td>
                     <td></td>
-                    <td>BDT 1000</td>
+                    <td id="total-cost">0</td>
                   </tr>
                 </tbody>
               </table>
               <div class="relative m-3">
                 <button
+                  onclick="applyCoupon()"
+                  id="coupon-btn"
                   class="btn btn-active bg-primary border-none text-white font-bold px-8 absolute left-[58%]"
                 >
                   Apply
                 </button>
                 <input
                   type="text"
+                  id="coupon-code"
                   placeholder="Have Any Coupon"
                   class="input w-full max-w-xs"
                 />
+                <div id="coupon-message" class="hidden">Coupon applied!</div>
               </div>
               <div class="">
                 <table class="table">
@@ -483,7 +557,7 @@
                       <td>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                       </td>
-                      <td>BDT 1000</td>
+                      <td id="grand-total">0</td>
                     </tr>
                   </tbody>
                 </table>
@@ -499,6 +573,7 @@
                   type="text"
                   placeholder="Enter Your Name"
                   class="input input-bordered w-full"
+                  id="passenger-name"
                 />
                 <div class="label">
                   <span class="label-text font-bold">Phone Number*</span>
@@ -507,6 +582,7 @@
                   type="number"
                   placeholder="Enter Your Phone Number"
                   class="input input-bordered w-full"
+                  id="phone-number"
                 />
                 <div class="label">
                   <span class="label-text font-bold">Email ID</span>
@@ -515,13 +591,30 @@
                   type="email"
                   placeholder="Enter Your Email ID"
                   class="input input-bordered w-full"
+                  id="email"
                 />
               </label>
+
               <button
-                class="btn btn-active bg-primary border-none text-white font-bold px-8 w-full my-5"
+                class="btn bg-primary border-none text-white font-bold px-8 w-full my-5"
+                onclick="my_modal_5.showModal()"
               >
-                NEXT
+                open modal
               </button>
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle"
+              >
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Successful</h3>
+                  <p class="py-4">Have a Safe Journey</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
               <div class="flex justify-around">
                 <div class="underline">
                   <a href="#">Terms & Conditions</a>
@@ -535,5 +628,6 @@
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
